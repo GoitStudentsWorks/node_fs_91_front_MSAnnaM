@@ -12,7 +12,7 @@ import { ThemeProvider } from 'components/ThemeProvider';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/frontend-project">
+    <BrowserRouter>
       <PersistGate persistor={persistor} loading={null}>
         <Provider store={store}>
           <Suspense fallback={<Loader />}>
